@@ -1,9 +1,8 @@
 import React from 'react';
 import { updateTask } from '../../redux/actions';
 import { connect } from 'react-redux';
-import './styles.css';
 import { PRIORITIES } from '../../config';
-
+import styles from './TaskList.module.css';
 
 class TasksList extends React.Component {
   render() {
@@ -11,7 +10,7 @@ class TasksList extends React.Component {
       items
     } = this.props;
     return <div>
-      <table>
+      <table className={styles.tasksList}>
         <caption>{items.length ? `${items.length} item(s)` : 'Noting'} in list</caption>
         <thead>
           <tr>
