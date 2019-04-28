@@ -7,6 +7,12 @@ import AddTaskFrom from '../AddTaskForm';
 import TasksList from '../TasksList';
 import FilterTasksForm from '../FilterTasksForm/index';
 
+import config from '../../config';
+const tests = localStorage.getItem('isTestRunning');
+if (tests) {
+  window._config = config;
+}
+
 class App extends Component {
   componentDidMount = () => this.props.loadItems();
 

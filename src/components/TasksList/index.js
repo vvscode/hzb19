@@ -2,7 +2,7 @@ import React from 'react';
 import { updateTask } from '../../redux/actions';
 import { connect } from 'react-redux';
 import './styles.css';
-import { PRIORITIES } from '../../config';
+import config from '../../config';
 
 
 class TasksList extends React.Component {
@@ -25,7 +25,7 @@ class TasksList extends React.Component {
             <td>
               {el.title}
             </td>
-            <td>{PRIORITIES[el.priority]}</td>
+            <td>{config.PRIORITIES[el.priority]}</td>
             <td>
               <input type="checkbox" checked={el.done} readOnly onClick={() => this.props.updateTask(el.id, { done: !el.done })} />
             </td>
