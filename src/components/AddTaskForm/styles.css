@@ -1,0 +1,19 @@
+.label {
+  width: 150px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.input {
+  width: 100px;
+  line-height: 1.5;
+  border: 1px solid green;
+  border-radius: 3px;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 15px 0;
+}
