@@ -4,6 +4,10 @@ import { connect } from 'react-redux';
 import './styles.css';
 import { PRIORITIES } from '../../config';
 
+const keyHelper = (el) => ({
+  key: el.id,
+  'data-key': el.id,
+});
 
 class TasksList extends React.Component {
   render() {
@@ -21,7 +25,7 @@ class TasksList extends React.Component {
           </tr>
         </thead>
         <tbody>
-          {items.map(el => <tr key={el.id}>
+          {items.map(el => <tr {...keyHelper(el)}>
             <td>
               {el.title}
             </td>
