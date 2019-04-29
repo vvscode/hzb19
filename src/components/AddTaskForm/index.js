@@ -2,7 +2,7 @@ import React from 'react';
 import { addTask } from '../../redux/actions';
 import { connect } from 'react-redux';
 import './styles.css';
-import { PRIORITIES } from '../../config';
+import config from '../../config';
 
 const DEFAULT_STATE = {
   title: '',
@@ -49,9 +49,9 @@ class AddTaskForm extends React.Component {
               <option value="" disabled>
                 Select task priority
               </option>
-              {Object.keys(PRIORITIES).map(value => (
+              {Object.keys(config.PRIORITIES).map(value => (
                 <option value={value} key={value}>
-                  {PRIORITIES[value]}
+                  {config.PRIORITIES[value]}
                 </option>
               ))}
             </select>
