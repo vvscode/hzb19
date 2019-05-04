@@ -1,10 +1,10 @@
 import React from 'react';
 import { updateTask } from '../../redux/actions';
 import { connect } from 'react-redux';
-import './styles.css';
 import { PRIORITIES } from '../../config';
+import styles from './TaskList.module.css';
 
-const keyHelper = (el) => ({
+const key = (el) => ({
   key: el.id,
   'data-key': el.id,
 });
@@ -15,7 +15,7 @@ class TasksList extends React.Component {
       items
     } = this.props;
     return <div>
-      <table>
+      <table className={styles.tasksList}>
         <caption>{items.length ? `${items.length} item(s)` : 'Noting'} in list</caption>
         <thead>
           <tr>
@@ -25,7 +25,7 @@ class TasksList extends React.Component {
           </tr>
         </thead>
         <tbody>
-          {items.map(el => <tr {...keyHelper(el)}>
+          {items.map(el => <tr {...key(el)}>
             <td>
               {el.title}
             </td>

@@ -1002,6 +1002,11 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
+"@vvscode/babel-plugin-react-component-data-attribute@0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@vvscode/babel-plugin-react-component-data-attribute/-/babel-plugin-react-component-data-attribute-0.5.0.tgz#2409f3fc277caa071ffd2531d3319d389db99137"
+  integrity sha512-IRuUw14tusPVRZmO00XYoqaElHV2ol3I+LxJQIr8trU+KAuE7i2sm+N5YcuApN9FpfoRZ+g+MUo8KGgmVOVE+w==
+
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.7.11.tgz#b988582cafbb2b095e8b556526f30c90d057cace"

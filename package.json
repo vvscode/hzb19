@@ -25,5 +25,13 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@vvscode/babel-plugin-react-component-data-attribute": "0.5.0"
+  },
+  "babel": {
+    "plugins": [
+      "@vvscode/react-component-data-attribute"
+    ]
+  }
 }
